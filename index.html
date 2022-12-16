@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carousel</title>
+</head>
+
+<body>
+    <div id="app">
+       <section class="carousel">
+         <h1>carousel</h1>
+        <div class="carousel__list">
+            <div class="carousel__item  carousel__item--visible"><img src="https://source.unsplash.com/random/200x300/?model" alt=""></div>
+            <div class="carousel__item"><img src="https://source.unsplash.com/random/200x300/?art" alt=""></div>
+            <div class="carousel__item"><img src="https://source.unsplash.com/random/200x300/?minimal" alt=""></div>
+        </div>
+        <div class="carousel__button">
+            <button class="carousel__button--prev">prev</button>
+            <button class="carousel__button--next">next</button>
+        </div>
+       </section>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+body {
+    background-color: blanchedalmond;
+}
+button {
+    --font-sm: 0.8rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: var(--font-sm);
+    line-height: calc(var(--font-sm) * 1.5);
+    cursor: pointer;
+}
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+#app {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.carousel__list {
+    display: flex;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+}
+.carousel .carousel__list .carousel__item,
+.carousel .carousel__list .carousel__item--hidden{
+    display: none;
+}
+.carousel .carousel__list .carousel__item--visible{
+    display: block;
+    animation: visibility .05s;
+}
+.carousel .carousel__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+.carousel .carousel__button button {
+    background-color: white;
+}
+.carousel .carousel__button button:hover {
+    background-color: whitesmoke;
+}
+
+/* visibility animation */
+
+@keyframes visibility {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+        transition: opacity linear;
+    }
+}
